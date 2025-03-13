@@ -1,0 +1,14 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;800&display=swap');
+
+/* body{
+  background-image: linear-gradient(to right, #303030 0%, black 100%);
+  padding: 0;
+  flex: 1;
+} */
+
+
+
