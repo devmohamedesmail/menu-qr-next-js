@@ -10,12 +10,12 @@ export async function POST(request) {
     try {
         await connectDB();
         const data = await request.json();
-
+     
        // Find user by email
         const existingUser = await User.findOne({ email: data.email });
         
         if (!existingUser) {
-            return new Response(JSON.stringify({ message: "User not found" }), { status: 404 });
+            return new Response(JSON.stringify({ message: "User nott found" }), { status: 404 });
         }
 
         // Compare password
@@ -31,3 +31,6 @@ export async function POST(request) {
         console.log("The retoe",error)
     } 
 }
+
+
+

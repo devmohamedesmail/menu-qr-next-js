@@ -33,33 +33,6 @@ export default function page() {
 
 
   // ************************************* Handle Login User start *************************************
-  const handleLoginUser = async () => {
-    setLoading(true);
-    if (!email) {
-      setEmailError(true);
-      setLoading(false);
-      return;
-    }
-    if (!password) {
-      setPasswordError(true);
-      setLoading(false);
-      return;
-    }
-    try {
-      const response = await fetch('/api/users/login', {
-        method: 'POST',
-        body: JSON.stringify({ email, password })
-      })
-      const data = await response.json();
-      console.log(data)
-      setLoading(false);
-    } catch (error) {
-      console.log("The retoe", error)
-      setLoading(false);
-    } finally {
-      setLoading(false);
-    }
-  }
 
   // ************************************* Handle Login User end *************************************
 

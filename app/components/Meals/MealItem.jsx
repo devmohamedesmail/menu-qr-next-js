@@ -19,10 +19,10 @@ export default function MealItem({ image, title, price, description, quantity, a
 
 
             <div className='flex justify-between items-center px-2 py-3'>
-                <div className='flex justify-between items-center flex-1 mr-10 bg-black px-2 py-1 rounded-full  '>
+                <div className='flex justify-between items-center  w-fit mr-10 bg-amber-600 px-2 py-1 rounded-full  '>
 
                     <CustomQuantityBtn icon={<FaPlus />} onClick={quantityIncrement} />
-                    <input type="text" readOnly className='w-6 text-center' value={quantity} />
+                    <input type="text" readOnly className='w-14 text-center' value={quantity} />
                     <CustomQuantityBtn icon={<FaMinus />} onClick={quantityDecrement} />
 
                 </div>
